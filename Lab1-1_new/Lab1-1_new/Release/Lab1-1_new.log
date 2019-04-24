@@ -1,0 +1,12 @@
+﻿  CheckSort.cpp
+  main.cpp
+  QSort.cpp
+  RandFile.cpp
+c:\users\azazello\desktop\lab1_1\lab1-1_new\lab1-1_new\lab1-1_new\randfile.cpp(5): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  ReadFile.cpp
+  TestFile.cpp
+  WriteFile.cpp
+  Создание кода
+  All 163 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Lab1-1_new.vcxproj -> C:\Users\Azazello\Desktop\Lab1_1\Lab1-1_new\Lab1-1_new\Release\Lab1-1_new.exe
