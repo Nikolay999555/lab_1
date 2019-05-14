@@ -1,6 +1,6 @@
 #include "Header.h"
 
-void WriteFile(const char* filename, int* data, int& size)
+void WriteFile(const char* filename, double* data, int& size)
 {
 	ofstream file_write;
 	file_write.open(filename, ios::out); //открываем файл для записи

@@ -1,6 +1,6 @@
 #include "Header.h"
 
-bool CheckSort(int* data, int& size) 
+bool CheckSort(double* data, int& size) 
 {
 	for (int i = 1; i < size; i++) 
 	{

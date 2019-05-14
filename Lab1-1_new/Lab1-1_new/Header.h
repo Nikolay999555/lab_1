@@ -8,9 +8,10 @@ using namespace std;
 #define	  stop __asm nop
 
 bool TestFile(const char* inputfile, const char* output_file);
-int& ReadFile(const char* fileName,int& size);
-void QuickSort(int* arr, int left, int right);
-void WriteFile(const char* fileName, int* data,int& size);
-bool CheckSort(int* data,int& size);
+int& SizeFile(const char* inputfile);
+void ReadFile(const char* fileName,double* read_array,int& size);
+void QuickSort(double* arr, int left, int right);
+void WriteFile(const char* fileName, double* data,int& size);
+bool CheckSort(double* data,int& size);
 void RandFile(const char* filename,int size);
 

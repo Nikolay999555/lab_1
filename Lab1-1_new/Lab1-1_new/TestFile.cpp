@@ -2,10 +2,19 @@
 
 bool TestFile(const char* inputfile, const char* output_file)
 {
-	int size_array=0; //размер считанного массива
+	int size = SizeFile(inputfile);
+	bool result_test = false;
+	double* read_array = new double[size]; //В ТЕКУЩЕМ БЛОКЕ ПАМЯТЬ ВЫДЕЛИЛИ
+	ReadFile(inputfile,read_array,size);
 
-	int* data = &ReadFile(inputfile,size_array); //читаем файл, получаем массив data
-	QuickSort(data, 0, size_array-1); //сортируем массив data быстрой сортировкой
-	WriteFile(output_file, data,size_array); //записываем осортированный массив в выходной файл
-	return CheckSort(data,size_array);// проверяем отсортировался ли массив data
+	if (size != 0)
+	{
+		QuickSort(read_array, 0, size - 1); //сортируем массив data быстрой сортировкой
+		WriteFile(output_file, read_array, size); //записываем осортированный массив в выходной файл
+		result_test = CheckSort(read_array,size);
+	}
+	delete[] read_array; //В ТЕКУЩЕМ БЛОКЕ ПАМЯТЬ ПОЧИСТИЛИ
+	read_array = nullptr; 
+
+	return result_test;
 }

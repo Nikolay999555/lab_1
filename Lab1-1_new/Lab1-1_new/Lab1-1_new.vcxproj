@@ -123,6 +123,7 @@
     <ClCompile Include="QSort.cpp" />
     <ClCompile Include="RandFile.cpp" />
     <ClCompile Include="ReadFile.cpp" />
+    <ClCompile Include="SizeFile.cpp" />
     <ClCompile Include="TestFile.cpp" />
     <ClCompile Include="WriteFile.cpp" />
   </ItemGroup>

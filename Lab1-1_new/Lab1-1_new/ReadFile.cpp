@@ -1,24 +1,23 @@
 #include "Header.h"
 
-int& ReadFile(const char* filename,int& size)
+void ReadFile(const char* filename, double* read_array, int& size)
 {
 	ifstream file_read;
 	file_read.open(filename,ios::in); //открываем файл для чтения
 
-	int temp, i = 0;
-	while (file_read>>temp) //циклом получаем количество записанных в файл элементов
+	char temp[128];
+	int i = 0;
+	while (file_read >> temp) //циклом считываем в массив read_array данные из файла
 	{
-		size++;
+		char* end;
+		double double_val = strtod(temp, &end);
+		if (temp!=end)
+		{
+			read_array[i] = double_val;
+			i++;
+		}
 	}
-
-	file_read.clear();
-	file_read.seekg(0); //возвращаемся на начало файла 
-
-	int* read_array= new int[size]; //выделяем память под считанные данные
-	while (file_read >> read_array[i]) //циклом считываем в массив read_array данные из файла
-	{
-		i++;
-	}
+	size = i;
 	file_read.close(); //закрываем файл
-	return *read_array; //возвращаем массив
+
 }

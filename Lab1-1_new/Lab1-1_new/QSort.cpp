@@ -1,11 +1,11 @@
 #include "Header.h"
 //описание работы быстрой сортировки можно почитать в интернете
-void QuickSort(int* arr, int left, int right) {
+void QuickSort(double* arr, int left, int right) {
 
 	int i = left;
 	int j = right;
-	int tmp;
-	int pivot = arr[(left + right) / 2];
+	double tmp;
+	double pivot = arr[(left + right) / 2];
 
 	while (i <= j) {
 		while (arr[i] < pivot)
