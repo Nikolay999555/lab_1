@@ -41,7 +41,7 @@
     <ClCompile Include="RandFile.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="SizeFile.cpp">
+    <ClCompile Include="FileSize.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

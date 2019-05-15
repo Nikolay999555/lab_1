@@ -2,7 +2,7 @@
 
 bool TestFile(const char* inputfile, const char* output_file)
 {
-	int size = SizeFile(inputfile);
+	int size = FileSize(inputfile);
 	bool result_test = false;
 	double* read_array = new double[size]; //б рейсыел акнйе оюлърэ бшдекхкх
 	ReadFile(inputfile,read_array,size);
