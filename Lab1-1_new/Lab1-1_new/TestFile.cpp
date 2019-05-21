@@ -10,6 +10,14 @@ bool TestFile(const char* inputfile, const char* output_file)
 	if (size != 0)
 	{
 		QuickSort(read_array, 0, size - 1); //сортируем массив data быстрой сортировкой
+
+		cout << "Sort data -> "; //выводим в консоль отсортированный массив
+		for (int i=0;i<size;i++)
+		{
+			cout << read_array[i] << " ";
+		}
+		cout << endl;
+
 		WriteFile(output_file, read_array, size); //записываем осортированный массив в выходной файл
 		result_test = CheckSort(read_array,size);
 	}

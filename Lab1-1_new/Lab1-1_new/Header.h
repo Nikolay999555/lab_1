@@ -5,7 +5,6 @@
 #include  <fstream>
 #include <ctime>
 using namespace std;
-#define	  stop __asm nop //онгбнкъер онярюбхрэ рнвйс нярюмнбю б кчанл леяре опнцпюллш цде мюохяюмн STOP (дкъ сднаярбю нркюдйх)
 
 bool TestFile(const char* inputfile, const char* output_file);
 int& FileSize(const char* inputfile);

@@ -18,6 +18,12 @@ void ReadFile(const char* filename, double* read_array, int& size)
 		}
 	}
 	size = i;
+
+	/*for (int i=0;i<size;i++)
+	{
+		cout << read_array[i] << " ";
+	}
+	cout << endl;*/
 	file_read.close(); //закрываем файл
 
 }

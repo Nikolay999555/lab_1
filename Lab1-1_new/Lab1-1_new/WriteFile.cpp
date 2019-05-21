@@ -9,5 +9,4 @@ void WriteFile(const char* filename, double* data, int& size)
 	{
 		file_write << data[i]<<' ';
 	}
-	stop
 }
